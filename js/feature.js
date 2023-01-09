@@ -30,7 +30,7 @@ function getPlural(lastChar, entity) {
     var entityName = document.getElementById("entityName");
     switch (lastChar) {
         case 'y':
-            var pref = entity.substring(0, ent.length - 1);
+            var pref = entity.substring(0, entity.length - 1);
             entityName.value = pref + "ies";
             break;
         default:
