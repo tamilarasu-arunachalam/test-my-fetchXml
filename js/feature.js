@@ -13,8 +13,6 @@ var editor = CodeMirror.fromTextArea(document.getElementById("fetchXmlQuery"), {
     theme: "default"
 });
 
-document.getElementById("creditYear").innerHTML = new Date.getFullYear();
-
 setInterval(function() {
     console.log(editor.getValue());
 }, 2000);
