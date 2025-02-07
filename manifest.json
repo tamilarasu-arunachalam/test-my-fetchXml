@@ -1,14 +1,14 @@
-{  
-    "manifest_version": 2,  
-    "name": "test-my-fetchXml",  
-    "description": "test-my-fetchXml",  
-    "version": "1.0",  
-    "browser_action": {  
-     "default_icon": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Extensible_Markup_Language_%28XML%29_logo.svg",  
-     "default_popup": "index.html"  
-    },  
-    "permissions": [  
-     "activeTab",  
-     "storage"  
-    ]  
-   } 
+{
+    "manifest_version": 2,
+    "name": "test-my-fetchXml",
+    "description": "test-my-fetchXml",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "https://www.tamilarasu.me/favicon.ico",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
