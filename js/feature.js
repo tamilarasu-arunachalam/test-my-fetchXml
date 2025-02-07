@@ -13,12 +13,9 @@ var editor = CodeMirror.fromTextArea(document.getElementById("fetchXmlQuery"), {
     theme: "default"
 });
 
-setInterval(function() {
-    console.log(editor.getValue());
-}, 2000);
-
-if (localStorage.getItem("orgUrl") !== null)
+if (localStorage.getItem("orgUrl") !== null) {
     orgUrl.value = localStorage.getItem("orgUrl");
+}
 
 // set plural name
 setInterval(function() {
@@ -32,20 +29,6 @@ setInterval(function() {
     var lastChar = entity.charAt(entity.length - 1);
     getPlural(lastChar, entity);
 }, 2000);
-
-// onchange of xml
-function xmlOnChange() {
-    var fetchXmlQuery = document.getElementById("fetchXmlQuery");
-    var parser, xmlParse;
-    parser = new DOMParser();
-    let onlyXml = fetchXmlQuery.value.replaceAll('\n', '');
-    xmlParse = parser.parseFromString(onlyXml, "text/xml");
-    var node = xmlParse.getElementsByTagName("entity")[0];
-    var attr = node.attributes[0];
-    var entity = attr.value;
-    var lastChar = entity.charAt(entity.length - 1);
-    getPlural(lastChar, entity);
-}
 
 //on click of test fetch xml button
 function testOnClick() {
