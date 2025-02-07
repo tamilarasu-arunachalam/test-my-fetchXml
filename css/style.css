@@ -4,7 +4,15 @@
     font-style: normal;
 }
 
-#headerLogo {
+body {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#headerLogo,
+.footerLinks {
     text-decoration: none;
 }
 
