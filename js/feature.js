@@ -35,7 +35,7 @@ function testOnClick() {
     if (orgUrl.value === '') {
         alert("Please enter Organization URL");
     } else {
-        testBtn.setAttribute("href", orgUrl.value + "/api/data/v9.2/" + entityName.value + "?fetchXml=" + fetchXmlQuery.value.replaceAll('\n', '').replace(/>\s*/g, '>').replace(/\s*</g, '<'));
+        testBtn.setAttribute("href", orgUrl.value + "/api/data/v9.2/" + entityName.value + "?fetchXml=" + editor.getValue().replaceAll('\n', '').replace(/>\s*/g, '>').replace(/\s*</g, '<'));
         testBtn.setAttribute("target", "_blank");
     }
 }
